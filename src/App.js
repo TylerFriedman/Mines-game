@@ -46,9 +46,11 @@ function App() {
   const [gameHash, setGameHash] = useState('');
   // Player's wallet
   const [playerAddress, setPlayerAddress] = useState(null);
- 
+  const [actionInProgress, setActionInProgress] = useState(false);
+  
   // Notification state
   const [notification, setNotification] = useState(null);
+
 
   // Create house signer
   function getHouseSigner() {
